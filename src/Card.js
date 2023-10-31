@@ -1,13 +1,44 @@
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import React from 'react';
 
-function Card(props) {
+function BasicExample() {
     return (
-        <div className="card">
-            <img src={props.image} alt={props.title} />
-            <h2>{props.title}</h2>
-            <p>{props.description}</p>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Card style={{ width: '18rem', borderRadius: '10px', marginRight: '10px' }}>
+                <Card.Body style={{backgroundColor: 'blue', borderRadius: '10px'}}>
+                    <Card.Title style={{color: 'white'}}>Card 1</Card.Title>
+                    <hr style={{borderTop: '1px solid white', marginBottom: '10px'}} />
+                    <Card.Text style={{color: 'white'}}>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem', borderRadius: '10px', marginRight: '10px' }}>
+                <Card.Body style={{backgroundColor: 'red', borderRadius: '10px'}}>
+                    <Card.Title style={{color: 'white'}}>Card 2</Card.Title>
+                    <hr style={{borderTop: '1px solid white', marginBottom: '10px'}} />
+                    <Card.Text style={{color: 'white'}}>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem', borderRadius: '10px' }}>
+                <Card.Body style={{backgroundColor: 'green', borderRadius: '10px'}}>
+                    <Card.Title style={{color: 'white'}}>Card 3</Card.Title>
+                    <hr style={{borderTop: '1px solid white', marginBottom: '10px'}} />
+                    <Card.Text style={{color: 'white'}}>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         </div>
     );
 }
 
-export default Card;
+export default BasicExample;
