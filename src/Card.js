@@ -4,6 +4,8 @@ import React from 'react';
 
 function BasicExample() {
     return (
+        <div>
+        <h1>Card Components</h1>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Card style={{ width: '18rem', borderRadius: '10px', marginRight: '10px' }}>
                 <Card.Body style={{backgroundColor: 'blue', borderRadius: '10px'}}>
@@ -37,6 +39,7 @@ function BasicExample() {
                     </Card.Text>
                 </Card.Body>
             </Card>
+        </div>
         </div>
     );
 }

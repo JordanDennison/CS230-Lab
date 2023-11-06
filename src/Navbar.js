@@ -19,7 +19,7 @@ function BasicExample() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
-                        <Nav.Link href="#link" className='text-white'>About</Nav.Link>
+                        <Nav.Link href="#link" className='text-white'>Card</Nav.Link>
                         <Nav.Link href="#link" className='text-white'>Contact</Nav.Link>
                     </Nav>
                     <Nav className="ml-auto">
